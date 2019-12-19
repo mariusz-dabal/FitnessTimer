@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Fitness Timer
+          <router-link to="/" class="titleLink">Fitness Timer</router-link>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -21,8 +21,8 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-2"
-      class="bg-grey-4"
+      content-class="bg-grey-10"
+      class="bg-grey-10"
     >
       <q-list>
         <q-item-label header>Navigation</q-item-label>
@@ -81,3 +81,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .titleLink,
+  :active,
+  :visited {
+    color: #fff;
+    text-decoration: none;
+  }
+</style>
